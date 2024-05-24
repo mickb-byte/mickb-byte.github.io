@@ -40,10 +40,6 @@ nav ul li a {
     color: #0645ad;
 }
 
-main {
-    margin-bottom: 20px;
-}
-
 main article {
     margin-bottom: 20px;
 }
@@ -61,4 +57,51 @@ footer {
     margin-top: 20px;
     padding-top: 10px;
     text-align: center;
+}
+
+/* css/style.css */
+main {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.center-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile-picture {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.info-circle {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    font-size: 14px;
+    text-align: center;
+}
+
+.about-me {
+    transform: rotate(45deg);
+}
+
+.interests {
+    transform: rotate(135deg);
+}
+
+.education {
+    transform: rotate(-45deg);
 }
