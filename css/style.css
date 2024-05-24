@@ -1,9 +1,64 @@
+/* css/style.css */
+@import url('reset.css');
+
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    text-align: center;
-    padding: 50px;
+    font-family: 'Georgia', serif;
+    background-color: #ffffff;
+    color: #000000;
+    line-height: 1.6;
+    margin: 20px;
+    padding: 20px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
 }
-h1 {
-    color: #333;
+
+header {
+    border-bottom: 1px solid #a2a9b1;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+}
+
+header h1 {
+    font-family: 'Sans-serif', Arial, Helvetica;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #0645ad;
+}
+
+main {
+    margin-bottom: 20px;
+}
+
+main article {
+    margin-bottom: 20px;
+}
+
+main h2 {
+    font-family: 'Sans-serif', Arial, Helvetica;
+    font-size: 20px;
+    border-bottom: 1px solid #a2a9b1;
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+}
+
+footer {
+    border-top: 1px solid #a2a9b1;
+    margin-top: 20px;
+    padding-top: 10px;
+    text-align: center;
 }
