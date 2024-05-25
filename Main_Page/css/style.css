@@ -12,7 +12,7 @@ body {
 
 .central-textlogo {
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse; /* This reverses the order of the children */
     align-items: center;
 }
 
