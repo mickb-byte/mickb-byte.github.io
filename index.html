@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" class="js-enabled">
+
 <head>
     <meta charset="utf-8">
     <title>Mickipedia</title>
@@ -11,35 +12,57 @@
 <body>
     <main>
         <div class="central-textlogo">
-            <img class="central-featured-logo" src="robo.png" width="200" height="183" alt="">
+            <img class="central-featured-logo" src="robo2.png" width="200" height="183" alt="">
             <h1 class="central-textlogo-wrapper">
-            <span class="central-textlogo__image sprite svg-Wikipedia_wordmark">
-            Mickipedia
-            </span>
-            <strong class="jsl10n localized-slogan" data-jsl10n="portal.slogan">The Free Encyclopedia</strong>
+                <span class="central-textlogo__image sprite svg-Wikipedia_wordmark">Mickipedia</span>
+                <strong class="jsl10n localized-slogan" data-jsl10n="portal.slogan">The Free Encyclopedia</strong>
             </h1>
         </div>
+        <nav data-jsl10n="top-ten-nav-label" aria-label="Top languages" class="central-featured"
+            data-el-section="primary links">
+            <!-- #1. About -->
+            <div class="central-featured-lang lang1" lang="en" dir="ltr">
+                <a id="js-link-box-en" href="//en.wikipedia.org/" title="English — Wikipedia — The Free Encyclopedia"
+                    class="link-box" data-slogan="The Free Encyclopedia">
+                    <strong>About Me</strong>
+                </a>
+            </div>
+            <!-- #2. Contact -->
+            <div class="central-featured-lang lang2" lang="ru" dir="ltr">
+                <a id="js-link-box-ru" href="//ru.wikipedia.org/" title="Russkiy — Википедия — Свободная энциклопедия"
+                    class="link-box" data-slogan="Свободная энциклопедия">
+                    <strong>Contact</strong>
+                </a>
+            </div>
+            <!-- #3. Experience -->
+            <div class="central-featured-lang lang2" lang="ru" dir="ltr">
+                <a id="js-link-box-ru" href="//ru.wikipedia.org/" title="Russkiy — Википедия — Свободная энциклопедия"
+                    class="link-box" data-slogan="Свободная энциклопедия">
+                    <strong>Experience</strong>
+                </a>
+            </div>
+            <!-- #4. Resume -->
+            <div class="central-featured-lang lang2" lang="ru" dir="ltr">
+                <a id="js-link-box-ru" href="//ru.wikipedia.org/" title="Russkiy — Википедия — Свободная энциклопедия"
+                    class="link-box" data-slogan="Свободная энциклопедия">
+                    <strong>Resume</strong>
+                </a>
+            </div>
+            <!-- #5. Projects -->
+            <div class="central-featured-lang lang2" lang="ru" dir="ltr">
+                <a id="js-link-box-ru" href="//ru.wikipedia.org/" title="Russkiy — Википедия — Свободная энциклопедия"
+                    class="link-box" data-slogan="Свободная энциклопедия">
+                    <strong>Projects</strong>
+                </a>
+            </div>
 
-        <article id="home">
-            <h2>Welcome</h2>
-            <p>This is my Wikipedia-inspired portfolio.</p>
-        </article>
-        <article id="about">
-            <h2>About Me</h2>
-            <p>Information about me.</p>
-        </article>
-        <article id="projects">
-            <h2>Projects</h2>
-            <p>Details about my projects.</p>
-        </article>
-        <article id="contact">
-            <h2>Contact</h2>
-            <p>How to get in touch.</p>
-        </article>
+        </nav>
+
     </main>
     <footer>
         <p>&copy; 2024 My Portfolio</p>
     </footer>
     <script src="js/main.js"></script>
 </body>
+
 </html>
