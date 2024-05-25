@@ -11,48 +11,128 @@ body {
     color: #333; /* Dark text color for readability */
 }
 
-/* Link styles */
-.link-box {
-    text-decoration: none;
-    color: #000; /* Adjust color as needed */
+main {
+    padding: 0 1.28rem;
 }
 
-/* Logo container styles */
 .central-textlogo {
     position: relative;
+    margin: 4rem auto .5rem;
+    width: 270px;
+    font-family: Linux Libertine,Hoefler Text,Georgia,Times New Roman,Times,serif;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 3.3rem;
     text-align: center;
+    font-feature-settings: "ss05";
 }
 
-/* Logo image styles */
+h1 {
+    font-size: 32px;
+    font-size: 3.2rem;
+    margin: 1.2rem 0;
+  }
+
 .central-featured-logo {
-    display: block;
-    margin: 0 auto;
-}
-
-/* Logo text styles */
-.central-textlogo-wrapper {
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 2em;
-    line-height: 1;
+    top: 148px;
+    left: -110px
+
 }
 
-/* Slogan text styles */
+.central-textlogo-wrapper {
+    display: inline-block;
+    vertical-align: bottom;
+}
+  
+.central-textlogo__image {
+    color: transparent;
+    display: inline-block;
+    overflow: hidden;
+    text-indent: -10000px;
+    background-position: 0 -304px;
+    width: 176px;
+    height: 32px;
+}
+
 .localized-slogan {
-    font-size: 0.8em;
     display: block;
+    font-family: Linux Libertine,Georgia,Times,"Source Serif Pro",serif;
+    font-size: 15px;
+    font-size: 1.5rem;
+    font-weight: 400;
 }
 
-/* Navigation container styles */
-.world {
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
+.World {
+    position: relative;
+    height: 325px;
+    height: 32.5rem;
+    width: 546px;
+    width: 54.6rem;
+    max-width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    vertical-align: middle;
 }
 
-/* Individual navigation link styles */
-.world .link-box {
-    margin: 0 20px; /* Adjust margin between links */
+.World_feature {
+    position: absolute;
+    width: 156px;
+    width: 15.6rem;
+}
+
+.About_link {
+    top: 5%;
+    right: 55%;
+}
+
+.Contact_link {
+    top: 20%;
+    right: 65%;
+}
+
+.Experience_link {
+    top: 40%;
+    right: 68%;
+}
+
+.Projects_link {
+    top: 60%;
+    right: 65%;
+}
+
+.Resume_link {
+    top: 80%;
+    right: 55%;
+  }
+
+a {
+    unicode-bidi: embed;
+    outline: 0;
+    color: #36c;
+    text-decoration: none;
+}
+
+.World_feature.link-box {
+    display: block;
+    padding: 0;
+    text-decoration: none;
+    white-space: normal;
+}
+
+.World-featured strong {
+    display: block;
+    font-size: 16px;
+    font-size: 1.6rem;
+}
+
+footer {
+    background-color: #f5f5f5; /* Background color of the footer */
+    color: #000000; /* Text color of the footer */
+    text-align: center; /* Center-align the text */
+    padding: 20px 0; /* Add some padding for spacing */
+    position: fixed; /* Position the footer at the bottom of the viewport */
+    width: 100%; /* Make the footer span the entire width of the viewport */
+    bottom: 0; /* Align the footer to the bottom of the viewport */
+    left: 40px
 }
