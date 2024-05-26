@@ -1,0 +1,35 @@
+---
+layout: default
+---
+<article class="article">
+    <h1>{{ page.title }}</h1>
+    <p class="siteSub">From Mickipedia</p>
+    <p class="roleNote">{{ page.role_note }}</p> <!-- Optional custom field for role note -->
+    
+    <div class="articleRight">
+        <div class="articleRightInner">
+            <img src="{{ page.image_url }}" alt="{{ page.image_alt }}" /> <!-- Custom fields for image URL and alt text -->
+        </div>
+        {{ page.image_caption }} <!-- Custom field for image caption -->
+    </div>
+    
+    {{ content }} <!-- This will include the main content of the post -->
+    
+    <div class="contentsPanel">
+        <div class="contentsHeader">Contents</div>
+        <ul>
+            {% for item in page.contents %}
+            <li>
+                <span>{{ item.number }}</span><a href="{{ item.url }}">{{ item.title }}</a>
+                {% if item.subitems %}
+                <ul>
+                    {% for subitem in item.subitems %}
+                    <li><span>{{ subitem.number }}</span><a href="{{ subitem.url }}">{{ subitem.title }}</a></li>
+                    {% endfor %}
+                </ul>
+                {% endif %}
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
+</article>
